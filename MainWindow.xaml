@@ -1,0 +1,23 @@
+﻿<Window x:Class="ChuckNorrisJSON.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChuckNorrisJSON"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://www.oseiagyemang.com/wp-content/uploads/2020/04/1585780066772-755x1024.jpg"/>
+        </Grid.Background>
+        <ComboBox x:Name="cboCategories" HorizontalAlignment="Left" Margin="11,94,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtJoke" HorizontalAlignment="Center" Margin="0,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="344" Height="162"/>
+        <Label x:Name="titleLbl" Content="Chuck Norris Jokes" HorizontalAlignment="Left" Margin="11,10,0,0" VerticalAlignment="Top" Height="45" Width="296" Background="#FFF4F2F2" FontFamily="Bell MT" FontSize="36"/>
+        <Button x:Name="chuckBtn" Content="" HorizontalAlignment="Left" Margin="159,82,0,0" VerticalAlignment="Top" Height="46" Width="56" Click="chuckBtn_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="https://api.chucknorris.io/img/avatar/chuck-norris.png"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
